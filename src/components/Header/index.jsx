@@ -9,7 +9,7 @@ export default function Header () {
             <img src={logo} alt="Logo for the website" />
          </a>
          <form className={styles.header__searchField}>
-            <input type="text" placeholder="O que você procura?"/>
+            <input className={styles.header__searchField__input} type="text" placeholder="O que você procura?"/>
             <img src={search} alt="Magnifier"/>
          </form>
       </header>
