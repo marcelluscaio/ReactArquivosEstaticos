@@ -2,13 +2,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* margin: 1.5rem 24px; */
+	
+	width: 95%;
+	margin-inline: auto;
+	padding-block: 3.5dvh;
 
 	&__searchField {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: .375em .625em;
+
+		padding: .5em .75em;
 		width: 33%;
 		position: relative;
 		/* z-index: 0; */
@@ -21,25 +25,23 @@
 			z-index: -1;
 			border: 2px solid transparent;
 			background: linear-gradient(to right, #c98cf1, #7b78e5) border-box;
-			-webkit-mask: linear-gradient(#fff 0 0) padding-box,
-				linear-gradient(#fff 0 0);
+			-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 			-webkit-mask-composite: clear;
 			mask-composite: exclude;
 		}
 
-		&__input {
-			
+		&__input {			
 			width: 80%;
-			height: 2em;
 			border: none;
 			background-color: transparent;
 			outline: 0;
 						
 			color: #d9d9d9;
-			font-size: 1rem;
+			font-size: var(--fs-0);
+			line-height: 2;
 
 			&::placeholder {
-				font-size: 1rem;
+				/* font-size: 1rem; ele ja herda */
 			}
 		}
 	}

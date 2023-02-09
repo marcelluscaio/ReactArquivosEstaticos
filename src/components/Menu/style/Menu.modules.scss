@@ -1,0 +1,45 @@
+.menu {
+   width: 18%;
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 5vh;
+      
+      padding-left: 1.5vw;
+      margin: 0;
+      /* height: 276px; */
+      
+      list-style: none;
+
+      &__item {
+         display: flex;
+         /* justify-content: flex-start; */
+         align-items: center;
+         gap: 4%;
+
+         &:first-child {
+            a {
+               font-weight: 700;
+               color: #7b78e5;
+            }
+         }
+      }
+   }   
+
+   img {
+      /* margin-right: 0.5rem; */
+      --size: max(1rem, .75rem + 1.25vw);
+      width: var(--size);
+      height: var(--size);
+      cursor: pointer;
+   }
+
+   a {
+      text-decoration: none;
+      font-size: var(--fs-1);
+      color: #d9d9d9;
+      font-family: "GandhiSansRegular"
+   }
+}

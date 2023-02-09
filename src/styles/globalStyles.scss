@@ -1,3 +1,11 @@
+:root{
+  --fs-0: clamp(0.96rem, calc(1.00rem + -0.04vw), 0.99rem); /*16*/
+  --fs-1: clamp(1.11rem, calc(1.09rem + 0.13vw), 1.20rem);/*20*/
+  --fs-2: clamp(1.25rem, calc(1.18rem + 0.36vw), 1.50rem);/*24*/
+  --fs-3: clamp(1.41rem, calc(1.27rem + 0.67vw), 1.88rem);/*32*/
+  --fs-4: clamp(1.58rem, calc(1.36rem + 1.09vw), 2.34rem);/*40*/
+}
+
 body {
   margin: 0;
   padding: 0;
