@@ -1,5 +1,5 @@
 .menu {
-   width: 18%;
+   /* width: 20%; */
 
    &__list {
       display: flex;
@@ -7,7 +7,7 @@
       justify-content: space-around;
       gap: 5vh;
       
-      padding-left: 1.5vw;
+      padding-left: 0;
       margin: 0;
       /* height: 276px; */
       
@@ -37,9 +37,13 @@
    }
 
    a {
+      padding-right: 1.5em;
+      
       text-decoration: none;
       font-size: var(--fs-1);
       color: #d9d9d9;
-      font-family: "GandhiSansRegular"
+      font-family: "GandhiSansRegular";
+      white-space: nowrap;
+
    }
 }
