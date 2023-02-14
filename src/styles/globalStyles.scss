@@ -1,3 +1,5 @@
+@import './variables';
+
 :root{
   --fs-0: clamp(0.96rem, calc(1.00rem + -0.04vw), 0.99rem); /*16*/
   --fs-1: clamp(1.11rem, calc(1.09rem + 0.13vw), 1.20rem);/*20*/
@@ -10,6 +12,33 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-image: linear-gradient(#041833, #154580);
+  background-image: linear-gradient($azul-escuro, $azul-claro);
   box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(#041833, #154580);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #154580;
+  border-radius: 20px;
+}
+
+@font-face{
+  font-family: "GandhiSansRegular";
+  src: local(GandhiSans-Regular), url(../assets/fonts/GandhiSans-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "GandhiSansBold";
+  src: local(GandhiSans-Bold), url(../assets/fonts/GandhiSans-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-display: swap;
 }
