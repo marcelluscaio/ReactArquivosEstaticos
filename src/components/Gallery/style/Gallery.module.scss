@@ -1,9 +1,9 @@
 @import '../../../styles/variables';
 
 .gallery {
-   display: flex;
+   /* display: flex;
    justify-content: space-between;
-   align-items: flex-start;
+   align-items: flex-start; */
 
    margin-top: 1rem;
    margin-bottom: 2rem;
@@ -45,21 +45,24 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1rem;
+
       box-sizing: border-box;
+      padding: 0 1rem;
       width: 100%;
 
       p {
         margin: 0;
         margin-top: 0.5rem;
+
         color: $cinza-claro;
       }
 
       span {
-        width: 20%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        width: 20%;
 
         img {
           cursor: pointer;
@@ -76,8 +79,9 @@
   &__descricao {
     margin: 0;
     padding: 0 16px;
-    font-size: 1.25rem;
+
     color: $cor-do-texto;
     font-family: $fonte-bold;
+    font-size: 1.25rem;
   }
 }

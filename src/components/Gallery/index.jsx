@@ -6,10 +6,10 @@ import Tags from '../Tags';
 
 export default function Gallery(){
    return(
-      <section>
+      <section className={styles.gallery}>
          <h2>Navegue pela Galeria</h2>
          <Tags/>
-         <ul className={styles.gallery}>
+         <ul className={styles.gallery__cards}>
             {photos.map(photo => {
                return(
                   <li key={photo.id} className={styles.gallery__card}>
