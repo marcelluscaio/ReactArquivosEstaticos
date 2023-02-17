@@ -14,8 +14,10 @@ export default function InitialPage(){
                <Menu/>
                <Banner/>
             </section>
-            <Gallery/>
-            <Populares/>
+            <section className={styles.main__gallery}>
+               <Gallery/>
+               <Populares/>
+            </section>
          </main>
       </>
    )
