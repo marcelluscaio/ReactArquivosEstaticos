@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import Banner from "../../components/Banner";
 import Gallery from "../../components/Gallery";
+import Populares from "../../components/Populares";
 
 export default function InitialPage(){
    return (
@@ -14,6 +15,7 @@ export default function InitialPage(){
                <Banner/>
             </section>
             <Gallery/>
+            <Populares/>
          </main>
       </>
    )
